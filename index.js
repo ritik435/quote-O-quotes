@@ -9,6 +9,9 @@ app.get('/',(req,res)=>{
 app.get('/about',(req,res)=>{
     res.send('<h1>Its the about</h1>');
 })
+app.get('/users',(req,res)=>{
+    res.send('<h1>Its the users</h1>');
+})
 app.listen(PORT,()=>{
     console.log(`App is listening to http://localhost:${PORT}`);
 })
